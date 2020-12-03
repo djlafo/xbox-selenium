@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindAll;
 
 import util.Page;
 import util.TestCaseBase;
+import util.Waiting;
 
 public class GamerTagSearchPage extends Page {
 	
@@ -17,8 +18,12 @@ public class GamerTagSearchPage extends Page {
 	@FindAll({@FindBy(xpath = gameLinksXPath)})
 	public List<WebElement> game_links;
 	
-	public WebElement getNthgameLink(int n) {
-		return TestCaseBase.threadDriver.get().findElement(By.xpath(gameLinksXPath + "[" + n + "]"));
+	public void waitUntilLoad(int n) {
+		Waiting.until(game_links.get(n));
+	}
+	
+	public String getGameText(int n) {
+		return game_links.get(n).getText().trim();
 	}
 
 }

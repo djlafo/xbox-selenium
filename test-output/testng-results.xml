@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-02T10:21:12 CST" name="Default suite" finished-at="2020-12-02T10:21:26 CST" duration-ms="14434">
+  <suite started-at="2020-12-03T14:16:14 CST" name="Default suite" finished-at="2020-12-03T14:16:26 CST" duration-ms="11880">
     <groups>
       <group name="firefox">
-        <method signature="TopGamertags.testGamertags()[pri:0, instance:xbox.testcase.TopGamertags@2eae8e6e]" name="testGamertags" class="xbox.testcase.TopGamertags"/>
+        <method signature="TopGames.testGames()[pri:0, instance:xbox.testcase.TopGames@2eae8e6e]" name="testGames" class="xbox.testcase.TopGames"/>
       </group> <!-- firefox -->
       <group name="ChromeWin32">
-        <method signature="TopGamertags.testGamertags()[pri:0, instance:xbox.testcase.TopGamertags@2eae8e6e]" name="testGamertags" class="xbox.testcase.TopGamertags"/>
+        <method signature="TopGames.testGames()[pri:0, instance:xbox.testcase.TopGames@2eae8e6e]" name="testGames" class="xbox.testcase.TopGames"/>
       </group> <!-- ChromeWin32 -->
     </groups>
-    <test started-at="2020-12-02T10:21:12 CST" name="Default test" finished-at="2020-12-02T10:21:26 CST" duration-ms="14434">
-      <class name="xbox.testcase.TopGamertags">
-        <test-method is-config="true" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:xbox.testcase.TopGamertags@2eae8e6e]" started-at="2020-12-02T10:21:12 CST" name="setUpBrowser" finished-at="2020-12-02T10:21:18 CST" duration-ms="5847" status="PASS">
+    <test started-at="2020-12-03T14:16:14 CST" name="Default test" finished-at="2020-12-03T14:16:26 CST" duration-ms="11880">
+      <class name="xbox.testcase.TopGames">
+        <test-method is-config="true" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:xbox.testcase.TopGames@2eae8e6e]" started-at="2020-12-03T14:16:14 CST" name="setUpBrowser" finished-at="2020-12-03T14:16:20 CST" duration-ms="5841" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,15 +39,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method signature="testGamertags()[pri:0, instance:xbox.testcase.TopGamertags@2eae8e6e]" started-at="2020-12-02T10:21:18 CST" name="testGamertags" finished-at="2020-12-02T10:21:23 CST" duration-ms="5476" status="PASS">
+        <test-method signature="testGames()[pri:0, instance:xbox.testcase.TopGames@2eae8e6e]" started-at="2020-12-03T14:16:20 CST" name="testGames" finished-at="2020-12-03T14:16:23 CST" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGamertags -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:xbox.testcase.TopGamertags@2eae8e6e]" started-at="2020-12-02T10:21:23 CST" name="tearDown" finished-at="2020-12-02T10:21:26 CST" duration-ms="3086" status="PASS">
+        </test-method> <!-- testGames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xbox.testcase.TopGames@2eae8e6e]" started-at="2020-12-03T14:16:23 CST" name="tearDown" finished-at="2020-12-03T14:16:26 CST" duration-ms="3045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- xbox.testcase.TopGamertags -->
+      </class> <!-- xbox.testcase.TopGames -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

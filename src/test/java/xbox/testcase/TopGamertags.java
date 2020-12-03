@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import util.SystemUtil;
 import util.TestCaseBase;
-import util.Waiting;
 import xbox.basepages.GamerTagHomePage;
 import xbox.basepages.LeaderboardPage;
 
@@ -21,12 +20,12 @@ public class TopGamertags extends TestCaseBase {
 		
 		GamerTagHomePage homePage = new GamerTagHomePage();
 		homePage.open();
-		Waiting.until(homePage.leaderboards_link);
+		homePage.waitUntilLoad();
 		LeaderboardPage leaderboards = homePage.openLeaderboardPage();
-		Waiting.until(leaderboards.getNthgamertagLink(gamertags.length));
+		leaderboards.waitUntilLoad(gamertags.length);
 		
 		for(int i=0; i<gamertags.length; i++) {
-			Assert.assertEquals(gamertags[i], leaderboards.gamertag_links.get(i).getText());
+			Assert.assertEquals(gamertags[i], leaderboards.getGameText(i));
 		}
 	}
 }
