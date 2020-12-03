@@ -20,9 +20,9 @@ public class TopGamertags extends TestCaseBase {
 		
 		GamerTagHomePage homePage = new GamerTagHomePage();
 		homePage.open();
-		homePage.waitUntilLoad();
+		homePage.waitPageLoad();
 		LeaderboardPage leaderboards = homePage.openLeaderboardPage();
-		leaderboards.waitUntilLoad(gamertags.length);
+		leaderboards.waitPageLoad(gamertags.length);
 		
 		for(int i=0; i<gamertags.length; i++) {
 			Assert.assertEquals(gamertags[i], leaderboards.getGameText(i));

@@ -18,7 +18,7 @@ public class GamerTagSearchPage extends Page {
 	@FindAll({@FindBy(xpath = gameLinksXPath)})
 	public List<WebElement> game_links;
 	
-	public void waitUntilLoad(int n) {
+	public void waitPageLoad(int n) {
 		Waiting.until(game_links.get(n));
 	}
 	

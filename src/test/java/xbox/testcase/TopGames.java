@@ -21,9 +21,9 @@ public class TopGames extends TestCaseBase {
 		
 		GamerTagHomePage homePage = new GamerTagHomePage();
 		homePage.open();
-		homePage.waitUntilLoad();
+		homePage.waitPageLoad();
 		GamerTagSearchPage searchPage = homePage.search(gamertag);
-		searchPage.waitUntilLoad(topGames.length);
+		searchPage.waitPageLoad(topGames.length);
 		
 		for(int i=0; i<topGames.length; i++) {
 			Assert.assertEquals(searchPage.getGameText(i), topGames[i]);

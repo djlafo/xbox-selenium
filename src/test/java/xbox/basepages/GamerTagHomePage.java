@@ -47,7 +47,7 @@ public class GamerTagHomePage extends Page {
 		return new GamerTagSearchPage();
 	}
 	
-	public void waitUntilLoad() throws Exception {
+	public void waitPageLoad() throws Exception {
 		Waiting.until(leaderboards_link);
 		Waiting.until(search_input);
 		Waiting.until(search_button);

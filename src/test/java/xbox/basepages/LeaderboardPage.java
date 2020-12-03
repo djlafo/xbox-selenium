@@ -16,7 +16,7 @@ public class LeaderboardPage extends Page {
 	@FindAll({@FindBy(xpath = "//div[contains(@class, 'col-lg')]//a[contains(@class, 'display-4')]")})
 	public List<WebElement> gamertag_links;
 	
-	public void waitUntilLoad(int n) {
+	public void waitPageLoad(int n) {
 		Waiting.until(gamertag_links.get(n));
 	}
 	
